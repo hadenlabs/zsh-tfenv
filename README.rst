@@ -1,9 +1,6 @@
 zsh-tfenv
 =========
 
-Build
------
-
 |Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.1.0
@@ -23,7 +20,11 @@ Features
 Dependencies
 ------------
 
-List of applications:
+.. code-block:: bash
+
+    https://github.com/mafredri/zsh-async
+    https://github.com/marzocchi/zsh-notify
+    https://github.com/luismayta/zsh-functions
 
 Installation
 ------------
@@ -63,32 +64,31 @@ install this plugin by doing the following:
 If you're using `Antigen <https://github.com/getantibody/antibody>`__,
 install this plugin by doing the following:
 
-1. Add ``antibody bundle luismayta/zsh-tfenv`` to your
-   ``.zshrc`` where you're adding your other plugins.
+1. Add :
+
+    .. code-block:: bash
+
+        antibody bundle luismayta/zsh-tfenv
+
+    to your ``.zshrc`` where you're adding your other plugins.
 2. Either open a new terminal to force zsh to load the new plugin, or
    run ``antibody bundle luismayta/zsh-tfenv`` in a
    running zsh session.
 3. Enjoy!
 
-Contributing
-------------
+Quick Start
+===========
 
-Contributions are welcome! After cloning the repository:
+- Fork this repository
 
-.. code-block:: console
+Usage
+-----
 
-    $ make environment
-    $ make setup
+- Install dependences
 
-Tests are run with ``make``, you can run the baseline environments before submitting a PR:
+.. code-block:: bash
 
-.. code-block:: console
-
-    $ make test
-
-Style checks and formatting are done automatically during commit courtesy of
-`pre-commit <https://pre-commit.com>`_.
-
+  λ make setup
 
 Support
 -------
@@ -112,7 +112,7 @@ Team
 License
 -------
 
-Apache2
+MIT
 
 Changelog
 ---------
@@ -149,7 +149,7 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 .. Links
 .. _`changelog`: CHANGELOG.rst
 .. _`contributors`: AUTHORS
-.. _`contributing`: CONTRIBUTING.rst
+.. _`contributing`: docs/source/CONTRIBUTING.rst
 
 .. _`hadenlabs`: https://github.com/hadenlabs
 .. _`luis mayta`: https://github.com/luismayta
@@ -184,6 +184,5 @@ Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
 
 .. Dependences:
 
-.. _Python 3.7.3: https://www.python.org/downloads/release/python-373
+.. _Pyenv: https://github.com/pyenv/pyenv
 .. _Docker: https://www.docker.com/
-.. _Docker Compose: https://docs.docker.com/compose/
