@@ -7,36 +7,43 @@
 # Authors:
 #   Luis Mayta <slovacus@gmail.com>
 #
+tfenv_package_name=tfenv
 
-LIGHT_GREEN='\033[1;32m'
-CLEAR='\033[0m'
+ZSH_TFENV_PATH_ROOT=$(dirname "${0}":A)
+
+# shellcheck source=/dev/null
+source "${ZSH_TFENV_PATH_ROOT}"/src/helpers/messages.zsh
+
+# shellcheck source=/dev/null
+source "${ZSH_TFENV_PATH_ROOT}"/src/helpers/tools.zsh
 
 function tfenv::dependences {
-    echo -e "${CLEAR}${LIGHT_GREEN}Installing Dependences${CLEAR}"
+    message_info "Installing Dependences"
 }
 
 function tfenv::install {
-    echo -e "${CLEAR}${LIGHT_GREEN}Installing Tfenv${CLEAR}"
+    message_info "Installing ${tfenv_package_name}"
     git clone https://github.com/tfutils/tfenv.git ~/.tfenv
 }
 
 function tfenv::configure {
-    echo -e "${CLEAR}${LIGHT_GREEN}Configuring Tfenv${CLEAR}"
+    message_info "Configuring ${tfenv_package_name}"
 }
 
 function tfenv::post_install {
-    echo -e "${CLEAR}${LIGHT_GREEN}Post Install Tfenv${CLEAR}"
-    tfenv install 0.12.6
+    message_info "PostInstall ${tfenv_package_name}"
     tfenv install 0.11.10
+    tfenv install 0.12.9
+    tfenv install 0.12.17
 }
 
 function tfenv::load {
-    [[ -e "$HOME/.tfenv/bin" ]] && export PATH="$PATH:$HOME/.tfenv/bin"
+    path::append "${HOME}/.tfenv/bin"
 }
 
 tfenv::load
 
-if (( ! $+commands[tfenv] )); then
+if ! type -p tfenv > /dev/null; then
     tfenv::dependences
     tfenv::install
     tfenv::configure
