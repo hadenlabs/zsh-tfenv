@@ -9,14 +9,6 @@
 #
 tfenv_package_name=tfenv
 
-ZSH_TFENV_PATH_ROOT=$(dirname "${0}":A)
-
-# shellcheck source=/dev/null
-source "${ZSH_TFENV_PATH_ROOT}"/src/helpers/messages.zsh
-
-# shellcheck source=/dev/null
-source "${ZSH_TFENV_PATH_ROOT}"/src/helpers/tools.zsh
-
 function tfenv::dependences {
     message_info "Installing Dependences"
 }
@@ -38,7 +30,7 @@ function tfenv::post_install {
 }
 
 function tfenv::load {
-    path::append "${HOME}/.tfenv/bin"
+    path_append "${HOME}/.tfenv/bin"
 }
 
 tfenv::load
