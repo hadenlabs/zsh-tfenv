@@ -13,6 +13,8 @@ TFENV_VERSION_LATEST=0.12.19
 TFENV_ROOT_DIR=$(dirname "$0")
 TFENV_SRC_DIR="${TFENV_ROOT_DIR}"/src
 
+TFENV_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
+
 # shellcheck source=/dev/null
 source "${TFENV_SRC_DIR}"/base.zsh
 
