@@ -28,7 +28,8 @@ function tfenv::post_install {
     tfenv install 0.12.9
     tfenv install 0.12.17
     tfenv install 0.12.18
-    tfenv use 0.12.18
+    tfenv install 0.12.19
+    tfenv use 0.12.19
 }
 
 function tfenv::load {
