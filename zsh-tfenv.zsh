@@ -13,7 +13,7 @@ TFENV_VERSION_LATEST=0.12.19
 TFENV_ROOT_DIR=$(dirname "$0")
 TFENV_SRC_DIR="${TFENV_ROOT_DIR}"/src
 
-TFENV_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
+export TFENV_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
 
 # shellcheck source=/dev/null
 source "${TFENV_SRC_DIR}"/base.zsh
@@ -59,7 +59,7 @@ function tfenv::install::versions::factory {
 
 # Define a function to process the result of the job
 function tfenv::install::version::callback {
-    message_success "Finish:: ${1}"
+    message_success "${1}"
 }
 
 function tfenv::install::versions {
