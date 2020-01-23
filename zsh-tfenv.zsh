@@ -81,6 +81,7 @@ function tfenv::install::packages {
 }
 
 function tfenv::post_install {
+    tfenv::load
     message_info "Installing other tools for ${tfenv_package_name}"
     tfenv::install::version::global
     tfenv::install::packages
@@ -89,7 +90,7 @@ function tfenv::post_install {
 }
 
 function tfenv::load {
-    path_append "${HOME}/.tfenv/bin"
+    [ -e "${HOME}/.tfenv/bin" ] && export PATH="${PATH}:${HOME}/.tfenv/bin"
 }
 
 tfenv::load
