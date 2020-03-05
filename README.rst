@@ -3,6 +3,8 @@ zsh-tfenv
 
 |Build Status| |GitHub issues| |GitHub license|
 
+zsh-tfenv for zsh
+
 :Version: 0.1.0
 :Web: https://github.com/luismayta/zsh-tfenv
 :Download: https://github.com/luismayta/zsh-tfenv
@@ -23,7 +25,6 @@ Dependencies
 .. code-block:: bash
 
     https://github.com/mafredri/zsh-async
-    https://github.com/marzocchi/zsh-notify
     https://github.com/luismayta/zsh-functions
 
 
@@ -89,7 +90,7 @@ Usage
 
 .. code-block:: bash
 
-  λ make setup
+    λ make setup
 
 Support
 -------
@@ -145,15 +146,15 @@ Feel free to contact me to discuss any issues, questions, or comments.
 
 |linkedin| |beacon| |made|
 
-Made with :coffee: and :pizza: by `luis mayta`_ and `hadenlabs`_.
+Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 
 .. Links
 .. _`changelog`: CHANGELOG.rst
-.. _`contributors`: AUTHORS
+.. _`contributors`: docs/source/AUTHORS.rst
 .. _`contributing`: docs/source/CONTRIBUTING.rst
 
-.. _`hadenlabs`: https://github.com/hadenlabs
-.. _`luis mayta`: https://github.com/luismayta
+.. _`equipindustry`: https://github.com/equipindustry
+.. _`Luis Mayta`: https://github.com/luismayta
 
 
 .. _`Github`: https://github.com/luismayta
