@@ -162,7 +162,7 @@ Made with :coffee: and :pizza: by `Luis Mayta`_ and `equipindustry`_.
 .. _`Email`: slovacus@gmail.com
     :target: mailto:slovacus@gmail.com
 .. _`Twitter`: https://twitter.com/slovacus
-.. _`Website`: http://luismayta.github.io
+.. _`Website`: https://luismayta.github.io
 .. _`PGP`: https://keybase.io/luismayta/pgp_keys.asc
 
 .. |Build Status| image:: https://travis-ci.org/luismayta/zsh-tfenv.svg
