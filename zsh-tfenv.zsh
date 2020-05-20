@@ -8,7 +8,15 @@
 #   Luis Mayta <slovacus@gmail.com>
 #
 tfenv_package_name=tfenv
-TFENV_VERSION_LATEST=0.12.19
+TFENV_VERSION_LATEST=0.12.25
+TFENV_VERSIONS=(
+    0.11.10
+    0.12.9
+    0.12.17
+    0.12.18
+    0.12.24
+    0.12.25
+)
 
 TFENV_ROOT_DIR=$(dirname "$0")
 TFENV_SRC_DIR="${TFENV_ROOT_DIR}"/src
@@ -68,10 +76,9 @@ function tfenv::install::versions {
         message_warning "not found tfenv, please install tfenv"
         return
     fi
-    tfenv install 0.11.10
-    tfenv install 0.12.9
-    tfenv install 0.12.17
-    tfenv install 0.12.18
+    for version in "${TFENV_VERSIONS[@]}"; do
+        tfenv install "${version}"
+    done
     message_success "Installed versions for ${tfenv_package_name}"
 }
 
