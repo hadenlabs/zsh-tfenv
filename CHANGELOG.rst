@@ -22,4 +22,4 @@ Task
 .. _`0.1.0`: https://github.com/luismayta/zsh-tfenv/compare/0.0.0...0.1.0
 .. _0.0.0: https://gitlab.com/luismayta/zsh-tfenv/compare/0.0.0...0.0.0
 
-.. _`keep a CHANGELOG`: http://keepachangelog.com/en/0.0.0/
+.. _`keep a CHANGELOG`: http://keepachangelog.com/en/0.3.0/
