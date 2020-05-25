@@ -20,6 +20,7 @@ TFENV_VERSIONS=(
 
 TFENV_ROOT_DIR=$(dirname "$0")
 TFENV_SRC_DIR="${TFENV_ROOT_DIR}"/src
+[ -z "${TF_PLUGIN_CACHE_DIR}" ] && export TF_PLUGIN_CACHE_DIR="${HOME}"/.terraform.d/plugin-cache
 
 export TFENV_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/zsh-brew branch:develop"
 
@@ -29,6 +30,9 @@ source "${TFENV_SRC_DIR}"/base.zsh
 
 function tfenv::dependences {
     message_info "Installing Dependences"
+    if [ ! -d "${TF_PLUGIN_CACHE_DIR}" ]; then
+        mkdir -p "${TF_PLUGIN_CACHE_DIR}"
+    fi
 }
 
 function tfenv::install {
