@@ -1,9 +1,9 @@
 zsh-tfenv
 =========
 
-|Build Status| |GitHub issues| |GitHub license|
-
 zsh-tfenv for zsh
+
+|Build Status| |GitHub issues| |GitHub license|
 
 :Version: 0.1.0
 :Web: https://github.com/luismayta/zsh-tfenv
