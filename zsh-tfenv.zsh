@@ -8,7 +8,7 @@
 #   Luis Mayta <slovacus@gmail.com>
 #
 tfenv_package_name=tfenv
-TFENV_VERSION_LATEST=0.12.25
+TFENV_VERSION_LATEST=0.12.29
 TFENV_VERSIONS=(
     0.11.10
     0.12.9
@@ -16,6 +16,7 @@ TFENV_VERSIONS=(
     0.12.18
     0.12.24
     0.12.25
+    0.12.29
 )
 
 TFENV_ROOT_DIR=$(dirname "$0")
@@ -26,7 +27,6 @@ export TFENV_MESSAGE_BREW="Please install brew or use antibody bundle luismayta/
 
 # shellcheck source=/dev/null
 source "${TFENV_SRC_DIR}"/base.zsh
-
 
 function tfenv::dependences {
     message_info "Installing Dependences"
