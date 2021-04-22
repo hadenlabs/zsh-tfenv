@@ -173,6 +173,10 @@ title = "gitleaks config"
       '''^\.gitleaks.toml$''',
       '''^yarn.lock$''',
     ]
+    commits = [
+      '''2789bdacfe3e085f5b60bcd650f788c1160ceffc''',
+      '''bf9318532157fa6c16dfb5ce9c0f60357cdc1915''',
+    ]
 
 [whitelist]
 	description = "Ignore gitleaks config"
