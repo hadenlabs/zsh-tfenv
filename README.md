@@ -60,31 +60,31 @@ to your `.zshrc` where you're adding your other plugins.
 
 ## Functions
 
-zsh goenv includes a small utility `goenv` to fetch and install new packages.
+zsh tfenv includes a small utility `tfenv` to fetch and install new packages.
 
-#### `goenv::install`
+#### `tfenv::install`
 
-Install goenv.
+Install tfenv.
 
-#### `goenv::load`
+#### `tfenv::load`
 
-Load path goenv.
+Load path tfenv.
 
-#### `goenv::upgrade`
+#### `tfenv::upgrade`
 
-Upgrade version goenv.
+Upgrade version tfenv.
 
-#### `goenv::package::all::install`
+#### `tfenv::package::all::install`
 
-Install all package of goenv.
+Install all package of tfenv.
 
-#### `goenv::install::versions`
+#### `tfenv::install::versions`
 
-Install versions of config for goenv.
+Install versions of config for tfenv.
 
-#### `goenv::install::version::global`
+#### `tfenv::install::version::global`
 
-Install a version global of goenv.
+Install a version global of tfenv.
 
 ## Help
 
