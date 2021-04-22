@@ -20,4 +20,6 @@ tfenv::internal::main::factory
 tfenv::internal::tfenv::load
 
 if ! core::exists curl; then core::install curl; fi
+if ! core::exists terragrunt; then core::install terragrunt; fi
+if ! core::exists terraform-docs; then core::install terraform-docs; fi
 if ! core::exists tfenv; then tfenv::internal::tfenv::install; fi
