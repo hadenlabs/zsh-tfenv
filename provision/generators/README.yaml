@@ -1,0 +1,53 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: zsh-tfenv
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+#logo: docs/logo.png
+
+# License of this project
+license: 'LGPL-3.0'
+
+# Canonical GitHub repo
+github_repo: hadenlabs/zsh-tfenv
+
+# Badges to display
+badges:
+  - name: GitHub tag (latest SemVer)
+    image: https://img.shields.io/github/v/tag/hadenlabs/zsh-tfenv.svg?label=latest&sort=semver
+    url: https://github.com/hadenlabs/zsh-tfenv/releases
+  - name: Lint
+    image: https://github.com/hadenlabs/zsh-tfenv/actions/workflows/lint.yml/badge.svg?branch=develop
+    url: https://github.com/hadenlabs/zsh-tfenv/actions
+  - name: Issues
+    image: https://img.shields.io/github/issues/hadenlabs/zsh-tfenv.svg
+    url: https://github.com/hadenlabs/zsh-tfenv/issues
+  - name: Latest Release
+    image: https://img.shields.io/github/release/hadenlabs/zsh-tfenv.svg
+    url: https://github.com/hadenlabs/zsh-tfenv/releases
+
+# Short description of this project
+description: |-
+  zsh-tfenv plugin for zsh.
+
+requirements: |-
+
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+  * [zsh-core](https://github.com/hadenlabs/zsh-core)
+
+installation:
+  - 'docs/include/installation/oh-my-zsh.md'
+  - 'docs/include/installation/antigen.md'
+  - 'docs/include/installation/antibody.md'
+
+include:
+  - 'docs/functions.md'
