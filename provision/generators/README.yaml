@@ -22,17 +22,23 @@ github_repo: hadenlabs/zsh-tfenv
 # Badges to display
 badges:
   - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/hadenlabs/zsh-tfenv.svg?label=latest&sort=semver
+    image: https://img.shields.io/github/v/tag/hadenlabs/zsh-tfenv?label=latest&sort=semver
     url: https://github.com/hadenlabs/zsh-tfenv/releases
   - name: Lint
-    image: https://github.com/hadenlabs/zsh-tfenv/actions/workflows/lint.yml/badge.svg?branch=develop
+    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-tfenv/lint-code
     url: https://github.com/hadenlabs/zsh-tfenv/actions
   - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/zsh-tfenv.svg
+    image: https://img.shields.io/github/issues/hadenlabs/zsh-tfenv
     url: https://github.com/hadenlabs/zsh-tfenv/issues
   - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/zsh-tfenv.svg
+    image: https://img.shields.io/github/release/hadenlabs/zsh-tfenv
     url: https://github.com/hadenlabs/zsh-tfenv/releases
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/Keep%20A%20Changelog-1.0.0-%23E05735
+    url: https://keepachangelog.com
 
 # Short description of this project
 description: |-
