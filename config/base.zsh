@@ -11,5 +11,6 @@ export TFENV_VERSIONS=(
     0.13.0
     0.14.10
     0.15.0
+    0.15.1
 )
-export TFENV_VERSION_GLOBAL=0.14.10
+export TFENV_VERSION_GLOBAL=0.15.1
