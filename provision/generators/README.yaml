@@ -21,18 +21,12 @@ github_repo: hadenlabs/zsh-tfenv
 
 # Badges to display
 badges:
-  - name: GitHub tag (latest SemVer)
-    image: https://img.shields.io/github/v/tag/hadenlabs/zsh-tfenv?label=latest&sort=semver
-    url: https://github.com/hadenlabs/zsh-tfenv/releases
+  - name: GitHub release
+    image: https://img.shields.io/github/release/hadenlabs/zsh-tfenv?style=flat-square
+    url: https://github.com/hadenlabs/zsh-tfenv/releases/latest
   - name: Lint
     image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-tfenv/lint-code
-    url: https://github.com/hadenlabs/zsh-tfenv/actions
-  - name: Issues
-    image: https://img.shields.io/github/issues/hadenlabs/zsh-tfenv
-    url: https://github.com/hadenlabs/zsh-tfenv/issues
-  - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/zsh-tfenv
-    url: https://github.com/hadenlabs/zsh-tfenv/releases
+    url: https://github.com/hadenlabs/zsh-tfenv/actions?workflow=lint-code
   - name: Conventional Commits
     image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
     url: https://conventionalcommits.org
