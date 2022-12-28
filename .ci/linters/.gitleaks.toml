@@ -245,7 +245,13 @@ title = "gitleaks config"
   description = "image and html allowlists"
 	files = [
     '''(.*?)(jpg|gif|png|doc|pdf|bin|mp3|mp4|mov|ttf|woff|woff2|eot|lock)$''',
+    '''^\.gitignore$''',
     '''^\.gitleaks.toml$''',
     '''^\.gitignore$''',
     '''^yarn.lock$''',
+    '''^sonar-project.properties$''',
+  ]
+  paths = [
+    '''^vendor/(.*?)$''',
+    '''^node_modules/(.*?)$''',
   ]

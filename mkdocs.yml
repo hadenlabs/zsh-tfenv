@@ -17,6 +17,7 @@ extra:
 
 repo_name: 'hadenlabs/zsh-tfenv'
 repo_url: 'https://github.com/hadenlabs/zsh-tfenv'
+copyright: 'Copyright © 2021 <a href="https://hadenlabs.com">hadenlabs</a>'
 
 google_analytics:
   - ''
