@@ -1,3 +1,10 @@
+<!-- Space: Projects -->
+<!-- Parent: ZshTfenv -->
+<!-- Title: Functions -->
+<!-- Label: Functions -->
+<!-- Include: docs/disclaimer.md -->
+<!-- Include: ac:toc -->
+
 ## Functions
 
 zsh tfenv includes a small utility `tfenv` to fetch and install new packages.
